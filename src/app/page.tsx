@@ -33,7 +33,7 @@ const MENU_CATEGORIES = [
   { label: "VIETNAMESE COFFEE", href: "/menu" },
   { label: "WHITE COFFEE",      href: "/menu/white-coffee" },
   { label: "MILK SERIES",       href: "/menu/milk-series" },
-  { label: "MATCHA",            href: "#" },
+  { label: "MATCHA",            href: "/menu/matcha" },
   { label: "LATTE",             href: "#" },
   { label: "REFRESHING DRINK",  href: "#" },
   { label: "CROFFLE",           href: "#" },

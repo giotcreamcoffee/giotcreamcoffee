@@ -74,16 +74,16 @@ export default function MilkSeriesPage() {
           {DRINKS.map((drink, i) => (
             <article
               key={drink.name}
-              className="flex flex-col items-center text-center py-8 md:py-12"
+              className="row-span-4 grid [grid-template-rows:subgrid] text-center"
             >
               <h2
-                className="font-display font-light text-[#252a38] leading-tight mb-4 md:mb-8"
+                className="font-display font-light text-[#252a38] leading-tight self-end pt-8 md:pt-12"
                 style={{ fontSize: "clamp(1.2rem, 4vw, 3.125rem)" }}
               >
                 {drink.name}
               </h2>
 
-              <div className="w-full aspect-square overflow-hidden">
+              <div className="w-full aspect-square overflow-hidden mt-4 md:mt-8">
                 <img
                   src={drink.image}
                   alt={drink.name}
@@ -94,14 +94,14 @@ export default function MilkSeriesPage() {
               </div>
 
               <button
-                className="mt-5 md:mt-8 border border-[#252a38] rounded-full px-5 md:px-8 py-1.5 md:py-3 font-display font-light text-[#252a38] leading-none hover:bg-[#252a38] hover:text-white transition-colors duration-300 cursor-pointer"
+                className="mt-5 md:mt-8 mx-auto border border-[#252a38] rounded-full px-5 md:px-8 py-1.5 md:py-3 font-display font-light text-[#252a38] leading-none hover:bg-[#252a38] hover:text-white transition-colors duration-300 cursor-pointer"
                 style={{ fontSize: "clamp(1rem, 3vw, 2.8rem)" }}
               >
                 {drink.price}
               </button>
 
               <p
-                className="mt-3 md:mt-4 text-[#656565] leading-[1.5]"
+                className="mt-3 md:mt-4 pb-8 md:pb-12 text-[#656565] leading-[1.5]"
                 style={{ fontSize: "clamp(0.75rem, 2.5vw, 1.375rem)" }}
               >
                 {drink.description}
