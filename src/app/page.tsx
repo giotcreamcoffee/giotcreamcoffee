@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HeroCarousel from "./HeroCarousel";
 
 const ASSETS = {
@@ -29,13 +30,13 @@ const INGREDIENTS = [
 ];
 
 const MENU_CATEGORIES = [
-  "VIETNAMESE COFFEE",
-  "WHITE COFFEE",
-  "MILK SERIES",
-  "MATCHA",
-  "LATTE",
-  "REFRESHING DRINK",
-  "CROFFLE",
+  { label: "VIETNAMESE COFFEE", href: "/menu" },
+  { label: "WHITE COFFEE",      href: "/menu/white-coffee" },
+  { label: "MILK SERIES",       href: "#" },
+  { label: "MATCHA",            href: "#" },
+  { label: "LATTE",             href: "#" },
+  { label: "REFRESHING DRINK",  href: "#" },
+  { label: "CROFFLE",           href: "#" },
 ];
 
 export default function Home() {
@@ -179,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* ── Menu: decorative heading ── */}
-      <section className="bg-[#252a38] overflow-hidden">
+      <section id="menu" className="bg-[#252a38] overflow-hidden">
         <p
           className="font-display text-white font-light leading-[0.82] text-center pt-3 pb-1"
           style={{ fontSize: "clamp(3.5rem, 22vw, 22rem)" }}
@@ -194,22 +195,23 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
           <img src={ASSETS.mascot} alt="Giot mascot" className="h-[70%] md:h-[80%] w-auto opacity-30" />
         </div>
-        {MENU_CATEGORIES.map((category) => (
-          <div
-            key={category}
-            className="bg-[#d9d9d9] border-b border-[#aaa]/30 flex items-center px-5 md:px-[11%] py-5 md:py-7"
+        {MENU_CATEGORIES.map(({ label, href }) => (
+          <Link
+            key={label}
+            href={href}
+            className="bg-[#d9d9d9] border-b border-[#aaa]/30 flex items-center px-5 md:px-[11%] py-5 md:py-7 hover:bg-[#ccc]/60 transition-colors duration-200 group"
           >
             <span
               className="font-bold text-[#252a38] uppercase tracking-wide flex-1"
               style={{ fontSize: "clamp(1rem, 4vw, 2.6rem)" }}
             >
-              {category}
+              {label}
             </span>
-            <svg width="80" height="14" viewBox="0 0 80 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-[120px] md:h-[16px] shrink-0">
+            <svg width="80" height="14" viewBox="0 0 80 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-[120px] md:h-[16px] shrink-0 group-hover:translate-x-1 transition-transform duration-200">
               <line x1="0" y1="7" x2="70" y2="7" stroke="#252a38" strokeWidth="1.5"/>
               <path d="M70 2L78 7L70 12" stroke="#252a38" strokeWidth="1.5" strokeLinejoin="round"/>
             </svg>
-          </div>
+          </Link>
         ))}
       </section>
 

@@ -1,0 +1,211 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "White Coffee Menu | Giot Cream Coffee",
+};
+
+const ASSETS = {
+  logo:         "https://www.figma.com/api/mcp/asset/1905bf47-a5c4-43b5-ac22-2997e667b79e",
+  brandStrip:   "/images/menu/brand-strip.jpg",
+  egg:          "/images/menu/white-coffee/egg.jpg",
+  salted:       "/images/menu/white-coffee/salted.jpg",
+  pandan:       "/images/menu/white-coffee/pandan.jpg",
+  marshmallow:  "/images/menu/white-coffee/marshmallow.jpg",
+  pistachio:    "/images/menu/white-coffee/pistachio.jpg",
+  coconut:      "/images/menu/white-coffee/coconut.jpg",
+  tiramisu:     "/images/menu/white-coffee/tiramisu.jpg",
+  ube:          "/images/menu/white-coffee/ube.jpg",
+  cheesyCaramel:"/images/menu/white-coffee/cheesy-caramel.jpg",
+};
+
+const DRINKS = [
+  {
+    name: "Egg",
+    price: "$ 6.75",
+    description: "Phin-filtered, egg cream, condensed milk, & cocoa powder.",
+    image: ASSETS.egg,
+  },
+  {
+    name: "Salted",
+    price: "$ 6.75",
+    description: "Phin-filtered, salted cream, milk, condensed milk, & cocoa powder.",
+    image: ASSETS.salted,
+  },
+  {
+    name: "Pandan",
+    price: "$ 6.75",
+    description: "Phin-filtered, pandan cream, milk, & condensed milk.",
+    image: ASSETS.pandan,
+  },
+  {
+    name: "Marshmallow",
+    price: "$ 6.95",
+    description: "Phin-filtered, marshmallow cream, marshmallow, milk, condensed milk, & cocoa powder.",
+    image: ASSETS.marshmallow,
+  },
+  {
+    name: "Pistachio",
+    price: "$ 9.25",
+    description:
+      "Phin-filtered, pistachio cream, milk, condensed milk, toasted katafi, glazed croffle, & chocolate sauce.",
+    image: ASSETS.pistachio,
+  },
+  {
+    name: "Coconut",
+    price: "$ 6.75",
+    description: "Phin-filtered coconut cream, milk, condensed milk, & coconut flakes.",
+    image: ASSETS.coconut,
+  },
+  {
+    name: "Tiramisu",
+    price: "$ 6.95",
+    description: "Phin-filtered, tiramisu cream, ladyfinger, milk, condensed milk, & cocoa powder.",
+    image: ASSETS.tiramisu,
+  },
+  {
+    name: "Ube",
+    price: "$ 6.75",
+    description: "Phin-filtered, ube cream, milk, & condensed milk.",
+    image: ASSETS.ube,
+  },
+  {
+    name: "Cheesy Caramel",
+    price: "$ 6.75",
+    description:
+      "Phin-coffee, condensed milk, 2% milk, cheese foam, house special caramel, biscoff crumbs.",
+    image: ASSETS.cheesyCaramel,
+  },
+];
+
+const COLS_MOBILE = 2;
+const COLS_DESKTOP = 3;
+
+export default function WhiteCoffeePage() {
+  return (
+    <main className="font-sans text-[#252a38] overflow-x-hidden">
+
+      {/* ── Navigation ── */}
+      <nav className="bg-[#252a38] h-[72px] flex items-center px-5 md:px-[11%] relative">
+        <a href="#about" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          About us
+        </a>
+        <a href="/" className="absolute left-1/2 -translate-x-1/2">
+          <img src={ASSETS.logo} alt="Giot Cream Coffee" className="h-[53px] md:h-[98px] w-auto" />
+        </a>
+        <div className="ml-auto flex items-center gap-4 md:gap-9">
+          <a href="/" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+            Home
+          </a>
+          <a href="#merch" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+            Merch
+          </a>
+        </div>
+      </nav>
+
+      {/* ── Promo bar ── */}
+      <div className="bg-[#b9ac89] flex items-center justify-center py-3 md:py-[18px] px-4">
+        <p className="text-white text-[12px] md:text-sm font-medium tracking-[0.12em] md:tracking-[0.15em] uppercase text-center">
+          GET 5% OFF YOUR FIRST ONLINE ORDER
+        </p>
+      </div>
+
+      {/* ── Category header ── */}
+      <div className="bg-[#aa8158] px-5 md:px-[11%] py-5 md:py-10 flex items-center justify-between">
+        <a
+          href="/#menu"
+          className="font-display font-light text-white text-xl md:text-[40px] leading-none hover:opacity-75 transition-opacity"
+        >
+          MENU
+        </a>
+        <span className="font-display font-light text-white text-xl md:text-[40px] leading-none">
+          White Coffee
+        </span>
+      </div>
+
+      {/* ── Drink grid ── */}
+      <section className="bg-white px-5 md:px-[11%] pt-10 md:pt-20 pb-10">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 md:gap-x-8">
+          {DRINKS.flatMap((drink, i) => {
+            const rowStartMobile = i > 0 && i % COLS_MOBILE === 0;
+            const rowStartDesktop = i > 0 && i % COLS_DESKTOP === 0;
+            const elements = [];
+
+            if (rowStartMobile || rowStartDesktop) {
+              elements.push(
+                <div
+                  key={`divider-${i}`}
+                  className={[
+                    "border-t border-[#d9d9d9]",
+                    rowStartMobile && !rowStartDesktop
+                      ? "col-span-2 lg:hidden"
+                      : rowStartDesktop && !rowStartMobile
+                      ? "col-span-3 hidden lg:block"
+                      : "col-span-2 lg:col-span-3",
+                  ].join(" ")}
+                />
+              );
+            }
+
+            elements.push(
+              <article
+                key={drink.name}
+                className="flex flex-col items-center text-center py-8 md:py-12"
+              >
+                <h2
+                  className="font-display font-light text-[#252a38] leading-none mb-4 md:mb-8"
+                  style={{ fontSize: "clamp(1.2rem, 4vw, 3.125rem)" }}
+                >
+                  {drink.name}
+                </h2>
+
+                <div className="w-full aspect-square overflow-hidden">
+                  <img
+                    src={drink.image}
+                    alt={drink.name}
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                    fetchPriority={i < 3 ? "high" : "auto"}
+                  />
+                </div>
+
+                <button
+                  className="mt-5 md:mt-8 border border-[#252a38] rounded-full px-5 md:px-8 py-1.5 md:py-3 font-display font-light text-[#252a38] leading-none hover:bg-[#252a38] hover:text-white transition-colors duration-300 cursor-pointer"
+                  style={{ fontSize: "clamp(1rem, 3vw, 2.8rem)" }}
+                >
+                  {drink.price}
+                </button>
+
+                <p
+                  className="mt-3 md:mt-4 text-[#656565] leading-[1.5]"
+                  style={{ fontSize: "clamp(0.75rem, 2.5vw, 1.375rem)" }}
+                >
+                  {drink.description}
+                </p>
+              </article>
+            );
+
+            return elements;
+          })}
+        </div>
+      </section>
+
+      {/* ── Brand strip ── */}
+      <div className="px-5 md:px-[11%] py-8 md:py-14">
+        <img src={ASSETS.brandStrip} alt="" className="w-full h-auto" />
+      </div>
+
+      {/* ── Tagline ── */}
+      <div className="pb-16 md:pb-20 pt-2 text-center">
+        <p
+          className="font-display font-light text-[#b9ac89] leading-[1.1]"
+          style={{ fontSize: "clamp(2.5rem, 7vw, 5.3rem)" }}
+        >
+          Every Drop
+          <br />
+          Elevated
+        </p>
+      </div>
+
+    </main>
+  );
+}
