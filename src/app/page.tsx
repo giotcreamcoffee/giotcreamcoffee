@@ -32,11 +32,10 @@ const INGREDIENTS = [
 const MENU_CATEGORIES = [
   { label: "VIETNAMESE COFFEE", href: "/menu" },
   { label: "WHITE COFFEE",      href: "/menu/white-coffee" },
-  { label: "MILK SERIES",       href: "/menu/milk-series" },
   { label: "MATCHA",            href: "/menu/matcha" },
-  { label: "LATTE",             href: "#" },
+  { label: "MILK SERIES",       href: "/menu/milk-series" },
   { label: "REFRESHING DRINK",  href: "#" },
-  { label: "CROFFLE",           href: "#" },
+  { label: "CROFFLE",           href: "/menu/croffle" },
 ];
 
 export default function Home() {
