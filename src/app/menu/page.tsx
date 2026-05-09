@@ -89,7 +89,7 @@ export default function MenuPage() {
 
       {/* ── Navigation ── */}
       <nav className="bg-[#252a38] h-[72px] flex items-center px-5 md:px-[11%] relative">
-        <a href="#about" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+        <a href="/#about" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
           About us
         </a>
         <a href="/" className="absolute left-1/2 -translate-x-1/2">
@@ -99,7 +99,7 @@ export default function MenuPage() {
           <a href="/" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Home
           </a>
-          <a href="#merch" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <a href="/merch" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Merch
           </a>
         </div>

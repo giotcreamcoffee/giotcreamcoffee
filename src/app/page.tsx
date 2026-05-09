@@ -57,7 +57,7 @@ export default function Home() {
           <a href="/" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Home
           </a>
-          <a href="#merch" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <a href="/merch" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Merch
           </a>
         </div>
@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* ── Journey ── */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 border-t border-[#d9d9d9]">
+      <section id="about" className="grid grid-cols-1 lg:grid-cols-2 border-t border-[#d9d9d9]">
         {/* Left: photo */}
         <div className="relative h-[260px] md:h-[380px] lg:h-auto overflow-hidden">
           <img

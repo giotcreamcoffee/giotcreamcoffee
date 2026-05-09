@@ -64,7 +64,7 @@ export default function CrofflePage() {
 
       {/* ── Navigation ── */}
       <nav className="bg-[#252a38] h-[72px] flex items-center px-5 md:px-[11%] relative">
-        <a href="#about" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+        <a href="/#about" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
           About us
         </a>
         <a href="/" className="absolute left-1/2 -translate-x-1/2">
@@ -74,7 +74,7 @@ export default function CrofflePage() {
           <a href="/" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Home
           </a>
-          <a href="#merch" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <a href="/merch" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Merch
           </a>
         </div>
@@ -100,9 +100,12 @@ export default function CrofflePage() {
         </span>
       </div>
 
-      {/* ── Featured: Tiramisu (centered solo row on desktop) ── */}
+      {/* ── Featured croffle ── */}
       <section className="px-5 md:px-[11%] pt-10 md:pt-20 pb-0">
         <div className="flex flex-col items-center text-center max-w-xs md:max-w-md mx-auto">
+          <span className="mb-3 inline-block border border-[#aa8158] text-[#aa8158] text-[10px] md:text-xs font-medium tracking-[0.18em] uppercase px-4 py-1 rounded-full">
+            Seasonal
+          </span>
           <h2
             className="font-display font-light text-[#252a38] leading-tight pb-4 md:pb-8"
             style={{ fontSize: "clamp(1.2rem, 4vw, 3.125rem)" }}
