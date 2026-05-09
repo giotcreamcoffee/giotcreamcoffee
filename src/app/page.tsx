@@ -2,16 +2,14 @@ import Link from "next/link";
 import HeroCarousel from "./HeroCarousel";
 
 const ASSETS = {
-  heroLeft: "https://www.figma.com/api/mcp/asset/1739acfe-894c-4d2f-9754-c29ad8472d9f",
-  heroCenter: "https://www.figma.com/api/mcp/asset/069203ea-119a-496f-9245-af14a07537ec",
-  heroRight: "https://www.figma.com/api/mcp/asset/40f7b414-25d7-4dcc-945a-cb78392e83ac",
-  ingredients: "https://www.figma.com/api/mcp/asset/397fbdc9-0d4c-41ff-91eb-54f35e760991",
-  menuCoffee: "https://www.figma.com/api/mcp/asset/677b761d-f75a-43f1-800b-09c813c25eaa",
-  journey: "https://www.figma.com/api/mcp/asset/f8190c89-f3f9-481a-b32c-e3e9e88fa0ea",
-  instagram: "https://www.figma.com/api/mcp/asset/f102f844-4d6a-4c64-b8f6-665d161b2b2c",
-  mascot: "https://www.figma.com/api/mcp/asset/48969e2b-d12e-452e-9d1d-c32f54cbc758",
-  mascot2: "https://www.figma.com/api/mcp/asset/092fc470-76e2-4fc2-8fab-b4595ef01901",
-  logo: "https://www.figma.com/api/mcp/asset/1905bf47-a5c4-43b5-ac22-2997e667b79e",
+  heroLeft:    "/images/home/hero-left.jpg",
+  heroCenter:  "/images/home/hero-center.jpg",
+  heroRight:   "/images/home/hero-right.jpg",
+  ingredients: "/images/home/ingredients.jpg",
+  journey:     "/images/home/journey.jpg",
+  instagram:   "/images/home/instagram.svg",
+  mascot:      "/images/home/mascot.png",
+  logo:        "/images/home/logo.png",
 };
 
 const INGREDIENTS = [

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 };
 
 const ASSETS = {
-  logo:                "https://www.figma.com/api/mcp/asset/1905bf47-a5c4-43b5-ac22-2997e667b79e",
+  logo:                "/images/home/logo.png",
   brandStrip:          "/images/menu/brand-strip.jpg",
   tiramisu:            "/images/menu/croffles/tiramisu.jpg",
   biscoffCream:        "/images/menu/croffles/biscoff-cream.jpg",
@@ -17,16 +17,26 @@ const ASSETS = {
 };
 
 const FEATURED = {
-  name: "Tiramisu",
-  description: "Croffle, tiramisu cream espresso, & cocoa powder.",
-  image: ASSETS.tiramisu,
+  name: "Blueberry & Cream",
+  description: "Mascarpone, lemonade cream, fresh blueberry, blueberry syrup, garnish with fresh blueberry.",
+  image: ASSETS.blueberryCream,
 };
 
 const CROFFLES = [
   {
+    name: "Ube Coconut",
+    description: "Croffle, ube mascarpone, coconut drizzle & coconut flakes.",
+    image: ASSETS.ubeCoconut,
+  },
+  {
     name: "Biscoff & Cream",
     description: "Croffle, cream, cheese, Biscoff crumbs, Biscoff cookie, & house special caramel.",
     image: ASSETS.biscoffCream,
+  },
+  {
+    name: "Strawberry Cheesecake",
+    description: "Croffle, cream-cheese, fresh strawberry, strawberry syrup, cracker crumbs.",
+    image: ASSETS.strawberryCheesecake,
   },
   {
     name: "Strawberry Pistachio",
@@ -34,24 +44,14 @@ const CROFFLES = [
     image: ASSETS.strawberryPistachio,
   },
   {
-    name: "Ube Coconut",
-    description: "Croffle, ube mascarpone, coconut drizzle & coconut flakes.",
-    image: ASSETS.ubeCoconut,
-  },
-  {
-    name: "Blueberry & Cream",
-    description: "Mascarpone, lemonade cream, fresh blueberry, blueberry syrup, garnish with fresh blueberry.",
-    image: ASSETS.blueberryCream,
+    name: "Tiramisu",
+    description: "Croffle, tiramisu cream espresso, & cocoa powder.",
+    image: ASSETS.tiramisu,
   },
   {
     name: "Matcha Strawberry",
     description: "Croffle, matcha cream, fresh strawberry & matcha powder.",
     image: ASSETS.matchaStrawberry,
-  },
-  {
-    name: "Strawberry Cheesecake",
-    description: "Croffle, cream-cheese, fresh strawberry, strawberry syrup, cracker crumbs.",
-    image: ASSETS.strawberryCheesecake,
   },
 ];
 

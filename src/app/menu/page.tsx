@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 };
 
 const ASSETS = {
-  logo:         "https://www.figma.com/api/mcp/asset/1905bf47-a5c4-43b5-ac22-2997e667b79e",
+  logo:         "/images/home/logo.png",
   brandStrip:   "/images/menu/brand-strip.jpg",
   egg:          "/images/menu/egg.jpg",
   salted:       "/images/menu/salted.jpg",

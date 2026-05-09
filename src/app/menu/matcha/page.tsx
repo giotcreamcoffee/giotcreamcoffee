@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 };
 
 const ASSETS = {
-  logo:                "https://www.figma.com/api/mcp/asset/1905bf47-a5c4-43b5-ac22-2997e667b79e",
+  logo:                "/images/home/logo.png",
   brandStrip:          "/images/menu/brand-strip.jpg",
   sakuraStrawberry:    "/images/menu/matcha/sakura-strawberry.jpg",
   tiramisu:            "/images/menu/matcha/tiramisu.jpg",
@@ -225,7 +225,7 @@ export default function MatchaPage() {
           </span>
         </div>
 
-        <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 md:gap-x-8">
           {PURE_MATCHA_LATTES.map((drink) => (
             <article
               key={drink.name}

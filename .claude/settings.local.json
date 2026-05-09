@@ -2,7 +2,29 @@
   "permissions": {
     "allow": [
       "mcp__plugin_figma_figma__get_metadata",
-      "mcp__plugin_figma_figma__get_screenshot"
+      "mcp__plugin_figma_figma__get_screenshot",
+      "mcp__plugin_figma_figma__get_design_context",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(npx --version)",
+      "Bash(claude mcp *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/menu)",
+      "Bash(npx tsc *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/)",
+      "Bash(curl -s -o egg.jpg \"https://www.figma.com/api/mcp/asset/cd0f8c80-edda-47a1-9e73-6a40fa95080a\")",
+      "Bash(curl -s -o salted.jpg \"https://www.figma.com/api/mcp/asset/83a85253-69ad-4621-ba1f-6ad4d5b577cb\")",
+      "Bash(curl -s -o pandan.jpg \"https://www.figma.com/api/mcp/asset/f787f23e-2e5a-41ef-9ff1-c06a5e8f7af2\")",
+      "Bash(curl -s -o marshmallow.jpg \"https://www.figma.com/api/mcp/asset/ffcebcf0-6633-45b7-9e4f-062b8f5cef89\")",
+      "Bash(curl -s -o pistachio.jpg \"https://www.figma.com/api/mcp/asset/fb8166b4-254b-4c3c-9af5-5726b44fb4ff\")",
+      "Bash(curl *)",
+      "Bash(git push *)",
+      "Bash(wait)",
+      "Bash(sips -Z 800 /Users/simonnguyen/Documents/giotcreamcoffee/public/images/menu/matcha/jasmine-oolong.jpg --out /Users/simonnguyen/Documents/giotcreamcoffee/public/images/menu/matcha/jasmine-oolong.jpg)",
+      "Bash(sips -Z 800 /Users/simonnguyen/Documents/giotcreamcoffee/public/images/menu/matcha/earl-grey-lavender.jpg --out /Users/simonnguyen/Documents/giotcreamcoffee/public/images/menu/matcha/earl-grey-lavender.jpg)",
+      "Bash(sips -Z 800 /Users/simonnguyen/Documents/giotcreamcoffee/public/images/menu/matcha/thai-tea.jpg --out /Users/simonnguyen/Documents/giotcreamcoffee/public/images/menu/matcha/thai-tea.jpg)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
