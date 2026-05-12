@@ -74,7 +74,7 @@ export default function CrofflePage() {
           <a href="/" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Home
           </a>
-          <a href="/menu" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <a href="/#menu" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Menu
           </a>
         </div>

@@ -28,7 +28,7 @@ const INGREDIENTS = [
 ];
 
 const MENU_CATEGORIES = [
-  { label: "VIETNAMESE COFFEE", href: "/menu" },
+  { label: "VIETNAMESE COFFEE", href: "/vietnamese-coffee" },
   { label: "WHITE COFFEE",      href: "/menu/white-coffee" },
   { label: "MATCHA",            href: "/menu/matcha" },
   { label: "MILK SERIES",       href: "/menu/milk-series" },
@@ -57,7 +57,7 @@ export default function Home() {
           <a href="/" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Home
           </a>
-          <a href="/menu" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <a href="#menu" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Menu
           </a>
         </div>
