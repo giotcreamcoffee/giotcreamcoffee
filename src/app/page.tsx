@@ -52,13 +52,13 @@ export default function Home() {
           <img src={ASSETS.logo} alt="Giot Cream Coffee" className="h-[56px] md:h-[98px] w-auto" />
         </a>
 
-        {/* Right: Home + Merch */}
+        {/* Right: Home + Menu */}
         <div className="ml-auto flex items-center gap-4 md:gap-9">
           <a href="/" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Home
           </a>
-          <a href="/merch" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
-            Merch
+          <a href="/menu" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+            Menu
           </a>
         </div>
       </nav>
