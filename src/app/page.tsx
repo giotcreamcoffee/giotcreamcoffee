@@ -84,21 +84,11 @@ export default function Home() {
               { src: ASSETS.heroRight, alt: "" },
             ]}
             overlay={
-              <div className="absolute inset-0 flex items-start justify-center pt-[12%] px-6 pointer-events-none">
+              <div className="absolute inset-0 flex items-end justify-center pb-[calc(8%+20px)] px-6 pointer-events-none">
                 <div className="text-center pointer-events-auto">
-                  <p
-                    className="font-display text-white font-light leading-tight drop-shadow-lg"
-                    style={{ fontSize: "clamp(2rem, 11vw, 3rem)" }}
-                  >
-                    Headline
-                    <br />
-                    Coletion Drink
-                  </p>
-                  <div className="flex justify-center">
-                    <a href="https://order.snackpass.co/giotcreamcoffee" target="_blank" rel="noopener noreferrer" className="mt-5 bg-[#252a38] text-[#989ca6] rounded-full px-6 py-2 text-sm font-medium tracking-widest uppercase shadow-lg cursor-pointer inline-block">
-                      Order Online
-                    </a>
-                  </div>
+                  <a href="https://order.snackpass.co/giotcreamcoffee" target="_blank" rel="noopener noreferrer" className="bg-[#252a38] text-white rounded-full px-6 py-2.5 text-sm font-semibold tracking-widest uppercase cursor-pointer inline-block ring-2 ring-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+                    Order Online
+                  </a>
                 </div>
               </div>
             }
@@ -113,20 +103,10 @@ export default function Home() {
         </div>
 
         {/* Desktop overlay */}
-        <div className="hidden md:flex absolute inset-0 items-start justify-start pt-[4%] pl-[37%] pr-0">
-          <div className="text-left">
-            <p
-              className="font-display text-white font-light leading-tight drop-shadow-lg"
-              style={{ fontSize: "clamp(2rem, 4.5vw, 4rem)" }}
-            >
-              Headline
-              <br />
-              Coletion Drink
-            </p>
-            <a href="https://order.snackpass.co/giotcreamcoffee" target="_blank" rel="noopener noreferrer" className="mt-5 bg-[#252a38] text-[#989ca6] rounded-full px-8 py-3 text-base font-medium tracking-widest uppercase shadow-lg hover:bg-white hover:text-[#252a38] transition-colors duration-300 cursor-pointer inline-block">
-              Order Online
-            </a>
-          </div>
+        <div className="hidden md:flex absolute inset-0 items-start justify-center pt-[5%]">
+          <a href="https://order.snackpass.co/giotcreamcoffee" target="_blank" rel="noopener noreferrer" className="bg-[#252a38] text-white rounded-full px-8 py-3 text-base font-semibold tracking-widest uppercase shadow-[0_4px_20px_rgba(0,0,0,0.5)] ring-2 ring-white/40 hover:bg-white hover:text-[#252a38] hover:ring-transparent transition-colors duration-300 cursor-pointer inline-block">
+            Order Online
+          </a>
         </div>
       </section>
 

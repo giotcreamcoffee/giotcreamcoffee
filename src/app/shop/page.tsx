@@ -69,13 +69,6 @@ export default function ShopPage() {
         </div>
       </nav>
 
-      {/* ── Promo bar ── */}
-      <div className="bg-[#b9ac89] flex items-center justify-center py-3 md:py-[18px] px-4">
-        <p className="text-white text-[12px] md:text-sm font-medium tracking-[0.12em] md:tracking-[0.15em] uppercase text-center">
-          Cool Down With Our New Refreshers
-        </p>
-      </div>
-
       {/* ── Product grid ── */}
       <section className="px-5 md:px-[11%] pt-10 md:pt-16 pb-16 md:pb-24">
         <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 gap-y-10 md:gap-y-16">
