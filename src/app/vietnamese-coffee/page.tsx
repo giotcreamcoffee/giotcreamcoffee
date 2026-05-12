@@ -21,13 +21,13 @@ const ASSETS = {
 const DRINKS = [
   {
     name: "Egg",
-    price: "$ 6.50",
+    price: "$ 6.75",
     description: "Phin-filtered, egg cream, condensed milk, & cocoa powder.",
     image: ASSETS.egg,
   },
   {
     name: "Salted",
-    price: "$ 6.50",
+    price: "$ 6.75",
     description: "Phin-filtered, salted cream, condensed milk, & cocoa powder.",
     image: ASSETS.salted,
   },
@@ -40,39 +40,39 @@ const DRINKS = [
   },
   {
     name: "Marshmallow",
-    price: "$ 6.75",
+    price: "$ 6.95",
     description:
       "Phin-filtered, marshmallow cream, marshmallow, condensed milk, & cocoa powder.",
     image: ASSETS.marshmallow,
   },
   {
     name: "Pandan",
-    price: "$ 6.50",
+    price: "$ 6.75",
     description: "Phin-filtered, pandan cream, & condensed milk.",
     image: ASSETS.pandan,
   },
   {
     name: "Coconut",
-    price: "$ 6.50",
+    price: "$ 6.75",
     description: "Phin-filtered, coconut cream, condensed milk, & coconut flakes.",
     image: ASSETS.coconut,
   },
   {
     name: "Tiramisu",
-    price: "$ 6.75",
+    price: "$ 6.95",
     description:
       "Phin-filtered, tiramisu cream, ladyfinger, condensed milk, & cocoa powder.",
     image: ASSETS.tiramisu,
   },
   {
     name: "Ube",
-    price: "$ 6.50",
+    price: "$ 6.75",
     description: "Phin-filtered, ube cream, and condensed milk.",
     image: ASSETS.ube,
   },
   {
     name: "Cheesy Caramel",
-    price: "$ 6.50",
+    price: "$ 6.75",
     description:
       "Phin-filtered, condensed milk, cheese foam, house special caramel, biscoff crumbs.",
     image: ASSETS.cheesyCaramel,
@@ -108,7 +108,7 @@ export default function MenuPage() {
       {/* ── Promo bar ── */}
       <div className="bg-[#b9ac89] flex items-center justify-center py-3 md:py-[18px] px-4">
         <p className="text-white text-[12px] md:text-sm font-medium tracking-[0.12em] md:tracking-[0.15em] uppercase text-center">
-          GET 5% OFF YOUR FIRST ONLINE ORDER
+          Cool Down With Our New Refreshers
         </p>
       </div>
 

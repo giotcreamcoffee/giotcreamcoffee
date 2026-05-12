@@ -66,7 +66,7 @@ export default function Home() {
       {/* ── Promo banner ── */}
       <div className="bg-[#b9ac89] flex items-center justify-center py-3 md:py-[18px] px-4">
         <p className="text-white text-[10px] md:text-sm font-medium tracking-[0.1em] md:tracking-[0.15em] uppercase text-center">
-          GET 5% OFF YOUR FIRST ONLINE ORDER
+          Cool Down With Our New Refreshers
         </p>
       </div>
 
@@ -95,9 +95,9 @@ export default function Home() {
                     Coletion Drink
                   </p>
                   <div className="flex justify-center">
-                    <button className="mt-5 bg-[#252a38] text-[#989ca6] rounded-full px-6 py-2 text-sm font-medium tracking-widest uppercase shadow-lg cursor-pointer">
+                    <a href="https://order.snackpass.co/giotcreamcoffee" target="_blank" rel="noopener noreferrer" className="mt-5 bg-[#252a38] text-[#989ca6] rounded-full px-6 py-2 text-sm font-medium tracking-widest uppercase shadow-lg cursor-pointer inline-block">
                       Order Online
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -123,9 +123,9 @@ export default function Home() {
               <br />
               Coletion Drink
             </p>
-            <button className="mt-5 bg-[#252a38] text-[#989ca6] rounded-full px-8 py-3 text-base font-medium tracking-widest uppercase shadow-lg hover:bg-white hover:text-[#252a38] transition-colors duration-300 cursor-pointer">
+            <a href="https://order.snackpass.co/giotcreamcoffee" target="_blank" rel="noopener noreferrer" className="mt-5 bg-[#252a38] text-[#989ca6] rounded-full px-8 py-3 text-base font-medium tracking-widest uppercase shadow-lg hover:bg-white hover:text-[#252a38] transition-colors duration-300 cursor-pointer inline-block">
               Order Online
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -249,11 +249,13 @@ export default function Home() {
 
           <div className="flex items-center gap-4">
             <p className="text-[#656565] text-sm">Made with ♥ in Minneapolis</p>
-            <img
-              src={ASSETS.instagram}
-              alt="Instagram"
-              className="w-7 h-7 opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
-            />
+            <a href="https://www.instagram.com/giot.creamcoffee/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={ASSETS.instagram}
+                alt="Instagram"
+                className="w-7 h-7 opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </a>
           </div>
         </div>
       </section>

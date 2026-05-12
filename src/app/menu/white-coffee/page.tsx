@@ -21,19 +21,19 @@ const ASSETS = {
 const DRINKS = [
   {
     name: "Egg",
-    price: "$ 6.75",
+    price: "$ 6.95",
     description: "Phin-filtered, egg cream, condensed milk, & cocoa powder.",
     image: ASSETS.egg,
   },
   {
     name: "Salted",
-    price: "$ 6.75",
+    price: "$ 6.95",
     description: "Phin-filtered, salted cream, milk, condensed milk, & cocoa powder.",
     image: ASSETS.salted,
   },
   {
     name: "Pandan",
-    price: "$ 6.75",
+    price: "$ 6.95",
     description: "Phin-filtered, pandan cream, milk, & condensed milk.",
     image: ASSETS.pandan,
   },
@@ -52,25 +52,25 @@ const DRINKS = [
   },
   {
     name: "Coconut",
-    price: "$ 6.75",
+    price: "$ 6.95",
     description: "Phin-filtered coconut cream, milk, condensed milk, & coconut flakes.",
     image: ASSETS.coconut,
   },
   {
     name: "Tiramisu",
-    price: "$ 6.95",
+    price: "$ 7.25",
     description: "Phin-filtered, tiramisu cream, ladyfinger, milk, condensed milk, & cocoa powder.",
     image: ASSETS.tiramisu,
   },
   {
     name: "Ube",
-    price: "$ 6.75",
+    price: "$ 6.95",
     description: "Phin-filtered, ube cream, milk, & condensed milk.",
     image: ASSETS.ube,
   },
   {
     name: "Cheesy Caramel",
-    price: "$ 6.75",
+    price: "$ 6.95",
     description:
       "Phin-coffee, condensed milk, 2% milk, cheese foam, house special caramel, biscoff crumbs.",
     image: ASSETS.cheesyCaramel,
@@ -105,7 +105,7 @@ export default function WhiteCoffeePage() {
       {/* ── Promo bar ── */}
       <div className="bg-[#b9ac89] flex items-center justify-center py-3 md:py-[18px] px-4">
         <p className="text-white text-[12px] md:text-sm font-medium tracking-[0.12em] md:tracking-[0.15em] uppercase text-center">
-          GET 5% OFF YOUR FIRST ONLINE ORDER
+          Cool Down With Our New Refreshers
         </p>
       </div>
 

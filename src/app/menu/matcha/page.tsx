@@ -24,25 +24,25 @@ const ASSETS = {
 const DRINKS = [
   {
     name: "Sakura Strawberry",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Matcha, sakura strawberry cream, almond milk, matcha powder, dried strawberry slices.",
     image: ASSETS.sakuraStrawberry,
   },
   {
     name: "Tiramisu",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Matcha, almond milk, tiramisu cream, ladyfinger cookie, matcha powder.",
     image: ASSETS.tiramisu,
   },
   {
     name: "Blueberry",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Blueberry compote, almond milk, matcha cream, matcha powder.",
     image: ASSETS.blueberry,
   },
   {
     name: "Oreo Cheese",
-    price: "$ 7.50",
+    price: "$ 8.50",
     description: "Matcha, condensed milk, 2% milk, cream cheese, cheese foam, gluten-free oreo.",
     image: ASSETS.oreoCheese,
   },
@@ -55,25 +55,25 @@ const DRINKS = [
   },
   {
     name: "Double",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Matcha, blueberry puree, almond milk, matcha powder.",
     image: ASSETS.double,
   },
   {
     name: "Brown Sugar Marshmallow",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Matcha, marshmallow cream, almond milk, brown sugar syrup, matcha powder.",
     image: ASSETS.brownSugarMarshmallow,
   },
   {
     name: "Ube",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Matcha, ube cream, almond milk, matcha powder.",
     image: ASSETS.ube,
   },
   {
     name: "Coconut",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Savoy coconut cream, matcha cream, 2% milk, condensed milk, & coconut flakes.",
     image: ASSETS.coconut,
   },
@@ -82,19 +82,19 @@ const DRINKS = [
 const PURE_MATCHA_LATTES = [
   {
     name: "Thai Tea",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Green Thai Tea syrup, Matcha, edible daisy topping.",
     image: ASSETS.thaiTea,
   },
   {
     name: "Jasmine Oolong",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Jasmine Oolong syrup, almond milk, matcha, jasmine flowers.",
     image: ASSETS.jasmineOolong,
   },
   {
     name: "Earl Grey Lavender",
-    price: "$ 7.50",
+    price: "$ 8.00",
     description: "Earl Grey Lavender Syrup, almond milk, Matcha, Blue cornflower petals.",
     image: ASSETS.earlGreyLavender,
   },
@@ -128,7 +128,7 @@ export default function MatchaPage() {
       {/* ── Promo bar ── */}
       <div className="bg-[#b9ac89] flex items-center justify-center py-3 md:py-[18px] px-4">
         <p className="text-white text-[12px] md:text-sm font-medium tracking-[0.12em] md:tracking-[0.15em] uppercase text-center">
-          GET 5% OFF YOUR FIRST ONLINE ORDER
+          Cool Down With Our New Refreshers
         </p>
       </div>
 

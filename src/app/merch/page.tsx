@@ -39,7 +39,7 @@ export default function MerchPage() {
       {/* ── Promo bar ── */}
       <div className="bg-[#b9ac89] flex items-center justify-center py-3 md:py-[18px] px-4">
         <p className="text-white text-[12px] md:text-sm font-medium tracking-[0.12em] md:tracking-[0.15em] uppercase text-center">
-          GET 5% OFF YOUR FIRST ONLINE ORDER
+          Cool Down With Our New Refreshers
         </p>
       </div>
 
