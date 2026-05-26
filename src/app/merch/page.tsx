@@ -62,15 +62,15 @@ export default function MerchPage() {
 
       {/* ── Navigation ── */}
       <nav className="bg-[#252a38] h-[72px] md:h-[118px] flex items-center px-5 md:px-[11%] relative">
-        <a href="/#about" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+        <a href="/#about" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
           About us
         </a>
         <a href="/" className="absolute left-1/2 -translate-x-1/2">
           <img src={ASSETS.logo} alt="Giot Cream Coffee" className="h-[53px] md:h-[98px] w-auto" />
         </a>
         <div className="ml-auto flex items-center gap-4 md:gap-9">
-          <span className="text-white text-[10px] md:text-[25px] font-medium">Merch</span>
-          <a href="/#menu" className="text-white text-[10px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <span className="text-white text-sm md:text-[25px] font-medium">Merch</span>
+          <a href="/#menu" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Menu
           </a>
           <CartButton />
