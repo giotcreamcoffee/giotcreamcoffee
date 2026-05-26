@@ -3,12 +3,18 @@
 import { useState, useRef } from "react";
 
 interface HeroCarouselProps {
-  images: { src: string; alt: string }[];
+  images: { src: string; alt: string; slideOverlay?: React.ReactNode }[];
   overlay: React.ReactNode;
+  onSlideChange?: (index: number) => void;
 }
 
-export default function HeroCarousel({ images, overlay }: HeroCarouselProps) {
+export default function HeroCarousel({ images, overlay, onSlideChange }: HeroCarouselProps) {
   const [current, setCurrent] = useState(1);
+
+  function goTo(index: number) {
+    setCurrent(index);
+    onSlideChange?.(index);
+  }
   const touchStartX = useRef<number | null>(null);
 
   function handleTouchStart(e: React.TouchEvent) {
@@ -19,11 +25,10 @@ export default function HeroCarousel({ images, overlay }: HeroCarouselProps) {
     if (touchStartX.current === null) return;
     const delta = e.changedTouches[0].clientX - touchStartX.current;
     if (Math.abs(delta) > 40) {
-      setCurrent((prev) =>
-        delta < 0
-          ? Math.min(prev + 1, images.length - 1)
-          : Math.max(prev - 1, 0)
-      );
+      const next = delta < 0
+        ? Math.min(current + 1, images.length - 1)
+        : Math.max(current - 1, 0);
+      goTo(next);
     }
     touchStartX.current = null;
   }
@@ -40,13 +45,14 @@ export default function HeroCarousel({ images, overlay }: HeroCarouselProps) {
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {images.map((img) => (
-          <img
-            key={img.src}
-            src={img.src}
-            alt={img.alt}
-            className="w-full h-full object-cover shrink-0"
-            style={{ width: "100%" }}
-          />
+          <div key={img.src} className="relative shrink-0 h-full" style={{ width: "100%" }}>
+            <img
+              src={img.src}
+              alt={img.alt}
+              className="w-full h-full object-cover"
+            />
+            {img.slideOverlay}
+          </div>
         ))}
       </div>
 
@@ -58,7 +64,7 @@ export default function HeroCarousel({ images, overlay }: HeroCarouselProps) {
         {images.map((_, i) => (
           <button
             key={i}
-            onClick={() => setCurrent(i)}
+            onClick={() => goTo(i)}
             aria-label={`Slide ${i + 1}`}
             className="flex items-center justify-center w-[18px] h-[18px]"
           >

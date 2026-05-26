@@ -1,11 +1,13 @@
 import Link from "next/link";
-import HeroCarousel from "./HeroCarousel";
+import HeroSection from "./HeroSection";
 
 const ASSETS = {
-  heroLeft:    "/images/home/hero-left.jpg",
-  heroCenter:  "/images/home/hero-center.jpg",
-  heroRight:   "/images/home/hero-right.jpg",
-  ingredients: "/images/home/ingredients.jpg",
+  heroLeft:         "/images/home/hero-left.jpg",
+  heroCenter:       "/images/home/hero-center.jpg",
+  heroRight:        "/images/home/hero-right.jpg",
+  heroMangoDesktop: "/images/home/hero-mango-desktop.jpg",
+  heroMangoMobile:  "/images/home/hero-mango-mobile.jpg",
+  ingredients:      "/images/home/ingredients.jpg",
   journey:     "/images/home/journey.jpg",
   instagram:   "/images/home/instagram.svg",
   mascot:      "/images/home/mascot.png",
@@ -63,52 +65,12 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* ── Promo banner ── */}
-      <div className="bg-[#b9ac89] flex items-center justify-center py-3 md:py-[18px] px-4">
-        <p className="text-white text-[10px] md:text-sm font-medium tracking-[0.1em] md:tracking-[0.15em] uppercase text-center">
-          Cool Down With Our New Refreshers
-        </p>
-      </div>
-
-      {/* ── Hero ── */}
-      <section
-        className="relative overflow-hidden"
-        style={{ height: "min(75vh, 864px)" }}
-      >
-        {/* Mobile: swipeable carousel */}
-        <div className="md:hidden h-full">
-          <HeroCarousel
-            images={[
-              { src: ASSETS.heroLeft, alt: "" },
-              { src: ASSETS.heroCenter, alt: "Giot signature drinks" },
-              { src: ASSETS.heroRight, alt: "" },
-            ]}
-            overlay={
-              <div className="absolute inset-0 flex items-end justify-center pb-[calc(8%+20px)] px-6 pointer-events-none">
-                <div className="text-center pointer-events-auto">
-                  <a href="https://order.snackpass.co/giotcreamcoffee" target="_blank" rel="noopener noreferrer" className="bg-[#252a38] text-white rounded-full px-6 py-2.5 text-sm font-semibold tracking-widest uppercase cursor-pointer inline-block ring-2 ring-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
-                    Order Online
-                  </a>
-                </div>
-              </div>
-            }
-          />
-        </div>
-
-        {/* Desktop: three-column grid */}
-        <div className="hidden md:grid grid-cols-3 h-full">
-          <img src={ASSETS.heroLeft} alt="" className="w-full h-full object-cover" />
-          <img src={ASSETS.heroCenter} alt="Giot signature drinks" className="w-full h-full object-cover" />
-          <img src={ASSETS.heroRight} alt="" className="w-full h-full object-cover" />
-        </div>
-
-        {/* Desktop overlay */}
-        <div className="hidden md:flex absolute inset-0 items-start justify-center pt-[5%]">
-          <a href="https://order.snackpass.co/giotcreamcoffee" target="_blank" rel="noopener noreferrer" className="bg-[#252a38] text-white rounded-full px-8 py-3 text-base font-semibold tracking-widest uppercase shadow-[0_4px_20px_rgba(0,0,0,0.5)] ring-2 ring-white/40 hover:bg-white hover:text-[#252a38] hover:ring-transparent transition-colors duration-300 cursor-pointer inline-block">
-            Order Online
-          </a>
-        </div>
-      </section>
+      <HeroSection assets={{
+        heroLeft:         ASSETS.heroLeft,
+        heroMangoDesktop: ASSETS.heroMangoDesktop,
+        heroMangoMobile:  ASSETS.heroMangoMobile,
+        heroCenter:       ASSETS.heroCenter,
+      }} />
 
       {/* ── Ingredients header (dark band) ── */}
       <div className="bg-[#252a38] pt-8 pb-6 md:pt-10 md:pb-8">
