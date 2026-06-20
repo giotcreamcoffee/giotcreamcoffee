@@ -45,7 +45,7 @@ export default function HeroSection({ assets }: Props) {
           <HeroCarousel
             onSlideChange={setMobileSlide}
             images={[
-              { src: assets.heroLeft, alt: "" },
+              { src: assets.heroLeft, alt: "Tropic Sunrise", objectPosition: "bottom" },
               {
                 src: assets.heroMangoMobile,
                 alt: "Mango Sticky Rice",

@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 
 interface HeroCarouselProps {
-  images: { src: string; alt: string; slideOverlay?: React.ReactNode }[];
+  images: { src: string; alt: string; slideOverlay?: React.ReactNode; objectPosition?: string }[];
   overlay: React.ReactNode;
   onSlideChange?: (index: number) => void;
 }
@@ -50,6 +50,7 @@ export default function HeroCarousel({ images, overlay, onSlideChange }: HeroCar
               src={img.src}
               alt={img.alt}
               className="w-full h-full object-cover"
+              style={{ objectPosition: img.objectPosition ?? "center" }}
             />
             {img.slideOverlay}
           </div>

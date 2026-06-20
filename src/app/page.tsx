@@ -2,7 +2,7 @@ import Link from "next/link";
 import HeroSection from "./HeroSection";
 
 const ASSETS = {
-  heroLeft:         "/images/home/hero-left.jpg",
+  heroLeft:         "/images/home/hero-tropic-sunrise.jpg",
   heroCenter:       "/images/home/hero-center.jpg",
   heroRight:        "/images/home/hero-right.jpg",
   heroMangoDesktop: "/images/home/hero-mango-desktop.jpg",
