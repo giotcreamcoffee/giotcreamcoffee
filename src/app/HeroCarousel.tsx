@@ -6,10 +6,11 @@ interface HeroCarouselProps {
   images: { src: string; alt: string; slideOverlay?: React.ReactNode; objectPosition?: string }[];
   overlay: React.ReactNode;
   onSlideChange?: (index: number) => void;
+  initialIndex?: number;
 }
 
-export default function HeroCarousel({ images, overlay, onSlideChange }: HeroCarouselProps) {
-  const [current, setCurrent] = useState(1);
+export default function HeroCarousel({ images, overlay, onSlideChange, initialIndex = 1 }: HeroCarouselProps) {
+  const [current, setCurrent] = useState(initialIndex);
 
   function goTo(index: number) {
     setCurrent(index);

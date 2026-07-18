@@ -5,7 +5,8 @@ const ASSETS = {
   heroLeft:         "/images/home/hero-tropic-sunrise.jpg",
   heroCenter:       "/images/home/hero-center.jpg",
   heroRight:        "/images/home/hero-right.jpg",
-  heroMangoDesktop: "/images/home/hero-mango-desktop.jpg",
+  heroCornDesktop:  "/images/home/hero-corn-desktop.jpg",
+  heroCornMobile:   "/images/home/hero-corn-mobile.jpg",
   heroMangoMobile:  "/images/home/hero-mango-mobile.jpg",
   ingredients:      "/images/home/ingredients.jpg",
   journey:     "/images/home/journey.jpg",
@@ -67,7 +68,8 @@ export default function Home() {
 
       <HeroSection assets={{
         heroLeft:         ASSETS.heroLeft,
-        heroMangoDesktop: ASSETS.heroMangoDesktop,
+        heroCornDesktop:  ASSETS.heroCornDesktop,
+        heroCornMobile:   ASSETS.heroCornMobile,
         heroMangoMobile:  ASSETS.heroMangoMobile,
         heroCenter:       ASSETS.heroCenter,
       }} />
