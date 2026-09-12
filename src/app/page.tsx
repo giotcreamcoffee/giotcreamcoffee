@@ -57,6 +57,9 @@ export default function Home() {
 
         {/* Right: Home + Menu */}
         <div className="ml-auto flex items-center gap-4 md:gap-9">
+          <a href="/catering" className="hidden md:inline text-white text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+            Catering
+          </a>
           <a href="/merch" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Merch
           </a>
@@ -154,6 +157,35 @@ export default function Home() {
             </svg>
           </Link>
         ))}
+      </section>
+
+      {/* ── Catering CTA ── */}
+      <section className="bg-[#dbd3bd] px-5 md:px-[11%] py-12 md:py-20">
+        <div className="lg:flex lg:items-center lg:justify-between lg:gap-12 text-center lg:text-left">
+          <div>
+            <p className="text-[#aa8158] text-[11px] md:text-xs font-medium tracking-[0.28em] uppercase mb-4">
+              GIOT Catering
+            </p>
+            <h2
+              className="font-display font-light leading-[1.05] mb-4"
+              style={{ fontSize: "clamp(2rem, 4.5vw, 3.6rem)" }}
+            >
+              Bring the café to your event
+            </h2>
+            <p className="text-[#5c5647] leading-relaxed max-w-xl mx-auto lg:mx-0 text-[15px] md:text-lg">
+              Weddings, corporate events, birthdays and private gatherings —
+              unlimited handcrafted drinks and mini croffles, served from our
+              mobile GIOT cart.
+            </p>
+          </div>
+
+          <Link
+            href="/catering"
+            className="mt-8 lg:mt-0 shrink-0 inline-block bg-[#252a38] text-white rounded-full px-9 py-3.5 text-sm font-semibold tracking-[0.15em] uppercase hover:bg-[#aa8158] transition-colors duration-300"
+          >
+            Explore Catering
+          </Link>
+        </div>
       </section>
 
       {/* ── Journey ── */}
