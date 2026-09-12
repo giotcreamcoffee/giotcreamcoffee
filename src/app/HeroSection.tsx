@@ -20,9 +20,9 @@ const MOBILE_BANNER: Record<number, string> = {
 const MAPLE_LABELS = [
   { top: "Maple Sesame",     bottom: "Latte",         mobile: [8.729, 41.063],  desktop: [22.119, 47.628] },
   { top: "Salted Maple",     bottom: "Sesame Matcha", mobile: [28.137, 32.158], desktop: [28.000, 27.545] },
-  { top: "Maple Sesame",     bottom: "Viet Coffee",   mobile: [44.510, 51.340], desktop: [47.420, 70.804] },
-  { top: "Maple Sesame",     bottom: "White Coffee",  mobile: [62.823, 50.281], desktop: [60.370, 68.416] },
-  { top: "Maple Sesame",     bottom: "Matcha",        mobile: [80.766, 49.373], desktop: [73.058, 66.368] },
+  { top: "Maple Sesame",     bottom: "Viet Coffee",   mobile: [41.500, 51.340], desktop: [47.420, 70.804] },
+  { top: "Maple Sesame",     bottom: "White Coffee",  mobile: [60.500, 50.281], desktop: [60.900, 68.416] },
+  { top: "Maple Sesame",     bottom: "Matcha",        mobile: [79.500, 49.373], desktop: [74.300, 66.368] },
   { top: "Magnolia Jasmine", bottom: "Sesame Milk Tea", mobile: [28.801, 62.810], desktop: [17.500, 74.000] },
 ] as const;
 
@@ -60,8 +60,8 @@ function MapleLabels({ view }: { view: "mobile" | "desktop" }) {
               left: `${left}%`,
               top: `${top}%`,
               fontSize: art.font,
-              lineHeight: 0.82,
-              letterSpacing: "-0.01em",
+              lineHeight: 1.05,
+              letterSpacing: "0.02em",
               textShadow: "0 1px 2px rgba(0,0,0,0.95), 0 0 6px rgba(0,0,0,0.7)",
             }}
           >
