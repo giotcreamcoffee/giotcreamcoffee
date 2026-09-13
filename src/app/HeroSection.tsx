@@ -5,9 +5,8 @@ import HeroCarousel from "./HeroCarousel";
 
 const MOBILE_BANNER: Record<number, string> = {
   0: "🍁 NEW FALL ADDITION 🍁",
-  1: "☀️ NEW SUMMER ADDITION ☀️",
+  1: "Cool Down With Our New Refreshers",
   2: "Cool Down With Our New Refreshers",
-  3: "Cool Down With Our New Refreshers",
 };
 
 /* Salted Maple Sesame drink names. Figma only places these on the mobile frame
@@ -80,8 +79,6 @@ interface Props {
     heroLeft: string;
     heroMapleDesktop: string;
     heroMapleMobile: string;
-    heroCornDesktop: string;
-    heroCornMobile: string;
     heroCenter: string;
   };
 }
@@ -119,7 +116,6 @@ export default function HeroSection({ assets }: Props) {
                 alt: "Salted Maple Sesame series",
                 slideOverlay: <MapleLabels view="mobile" />,
               },
-              { src: assets.heroCornMobile, alt: "Sweet Corn Series" },
               { src: assets.heroLeft, alt: "Tropic Sunrise", objectPosition: "bottom" },
               { src: assets.heroCenter, alt: "Giot signature drinks" },
             ]}
