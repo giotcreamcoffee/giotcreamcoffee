@@ -12,7 +12,7 @@ const ASSETS = {
   strawberryPistachio: "/images/menu/croffles/strawberry-pistachio.jpg",
   ubeCoconut:          "/images/menu/croffles/ube-coconut.jpg",
   blueberryCream:      "/images/menu/croffles/blueberry-cream.jpg",
-  matchaStrawberry:    "/images/menu/croffles/matcha-strawberry.jpg",
+  chicken:             "/images/menu/croffles/chicken.jpg",
   strawberryCheesecake:"/images/menu/croffles/strawberry-cheesecake.jpg",
 };
 
@@ -22,7 +22,14 @@ const FEATURED = {
   image: ASSETS.blueberryCream,
 };
 
-const CROFFLES = [
+type Croffle = {
+  name: string;
+  description: string;
+  image: string;
+  badge?: string;
+};
+
+const CROFFLES: Croffle[] = [
   {
     name: "Ube Coconut",
     description: "Croffle, ube mascarpone, coconut drizzle & coconut flakes.",
@@ -49,9 +56,10 @@ const CROFFLES = [
     image: ASSETS.tiramisu,
   },
   {
-    name: "Matcha Strawberry",
-    description: "Croffle, matcha cream, fresh strawberry & matcha powder.",
-    image: ASSETS.matchaStrawberry,
+    name: "Chili Maple Chicken",
+    description: "Chili maple sauce, panko chicken tenders, sriracha mayo, sesame pickle radish.",
+    image: ASSETS.chicken,
+    badge: "New",
   },
 ];
 
@@ -159,7 +167,7 @@ export default function CrofflePage() {
                   {item.name}
                 </h2>
 
-                <div className="w-full aspect-square overflow-hidden mt-4 md:mt-8">
+                <div className="relative w-full aspect-square overflow-hidden mt-4 md:mt-8">
                   <img
                     src={item.image}
                     alt={item.name}
@@ -167,6 +175,11 @@ export default function CrofflePage() {
                     loading={i < 3 ? "eager" : "lazy"}
                     fetchPriority={i < 3 ? "high" : "auto"}
                   />
+                  {item.badge && (
+                    <span className="absolute top-2 left-2 md:top-3 md:left-3 inline-block border border-[#aa8158] bg-white/85 text-[#aa8158] text-[10px] md:text-xs font-medium tracking-[0.18em] uppercase px-3 py-1 rounded-full">
+                      {item.badge}
+                    </span>
+                  )}
                 </div>
 
                 <p
