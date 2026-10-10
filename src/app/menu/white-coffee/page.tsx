@@ -86,20 +86,20 @@ export default function WhiteCoffeePage() {
 
       {/* ── Navigation ── */}
       <nav className="bg-[#252a38] h-[72px] flex items-center px-5 md:px-[11%] relative">
-        <a href="/#about" className="hidden md:inline text-white text-[12px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+        <a href="/#about" className="hidden md:inline text-white text-[15px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
           About us
         </a>
         <a href="/" className="order-first mr-4 md:mr-0 md:absolute md:left-1/2 md:-translate-x-1/2">
           <img src={ASSETS.logo} alt="Giot Cream Coffee" className="h-[53px] md:h-[98px] w-auto" />
         </a>
-        <div className="ml-auto flex items-center gap-3 md:gap-9">
-          <a href="/catering" className="text-white text-[12px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+        <div className="ml-auto flex items-center gap-4 md:gap-9">
+          <a href="/catering" className="text-white text-[15px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Catering
           </a>
-          <a href="/merch" className="text-white text-[12px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <a href="/merch" className="text-white text-[15px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Merch
           </a>
-          <a href="/#menu" className="text-white text-[12px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <a href="/#menu" className="text-white text-[15px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Menu
           </a>
         </div>

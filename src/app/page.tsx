@@ -46,7 +46,7 @@ export default function Home() {
       {/* ── Navigation ── */}
       <nav className="h-[70px] md:h-[113px] bg-[#252a38] flex items-center px-5 md:px-[11%] relative">
         {/* Left: About Us */}
-        <a href="#about" className="hidden md:inline text-white text-[12px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+        <a href="#about" className="hidden md:inline text-white text-[15px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
           About us
         </a>
 
@@ -56,14 +56,14 @@ export default function Home() {
         </a>
 
         {/* Right: Home + Menu */}
-        <div className="ml-auto flex items-center gap-3 md:gap-9">
-          <a href="/catering" className="text-white text-[12px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+        <div className="ml-auto flex items-center gap-4 md:gap-9">
+          <a href="/catering" className="text-white text-[15px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Catering
           </a>
-          <a href="/merch" className="text-white text-[12px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <a href="/merch" className="text-white text-[15px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Merch
           </a>
-          <a href="#menu" className="text-white text-[12px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+          <a href="#menu" className="text-white text-[15px] md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Menu
           </a>
         </div>
