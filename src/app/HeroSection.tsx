@@ -19,6 +19,8 @@ const PUMPKIN_LABELS = [
   { lines: ["Roasted Rice", "Pumpkin Chai"],  pos: [53.48, 36.38] },
   { lines: ["Pumpkin Butter", "Pure Matcha"], pos: [37.13, 60.28] },
   { lines: ["Pumpkin", "Brûlée Matcha"],      pos: [76.51, 71.21] },
+  /* Not in Figma; added by request beside the lower-left coffee cup. */
+  { lines: ["Pumpkin Brulee", "Viet Coffee"],  pos: [18.24, 67.35] },
 ] as const;
 
 /* Layer matching the object-cover box of the right-aligned pumpkin photo. */
