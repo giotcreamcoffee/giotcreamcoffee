@@ -96,6 +96,9 @@ export default function MenuPage() {
           <img src={ASSETS.logo} alt="Giot Cream Coffee" className="h-[53px] md:h-[98px] w-auto" />
         </a>
         <div className="ml-auto flex items-center gap-4 md:gap-9">
+          <a href="/catering" className="hidden md:inline text-white text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
+            Catering
+          </a>
           <a href="/merch" className="text-white text-sm md:text-[25px] font-medium hover:text-[#b9ac89] transition-colors">
             Merch
           </a>
