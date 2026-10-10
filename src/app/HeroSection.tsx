@@ -35,7 +35,7 @@ function PumpkinLabels() {
     >
       {PUMPKIN_LABELS.map((label) => (
         <div
-          key={label.lines[0]}
+          key={label.lines.join(" ")}
           className="absolute font-sans text-white whitespace-nowrap font-semibold"
           style={{
             left: `${label.pos[0]}%`,
