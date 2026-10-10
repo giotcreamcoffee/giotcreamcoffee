@@ -4,10 +4,53 @@ import { useState } from "react";
 import HeroCarousel from "./HeroCarousel";
 
 const MOBILE_BANNER: Record<number, string> = {
-  0: "🍁 NEW FALL ADDITION 🍁",
-  1: "Cool Down With Our New Refreshers",
+  0: "🎃 NEW PUMPKIN COLLECTION 🎃",
+  1: "🍁 NEW FALL ADDITION 🍁",
   2: "Cool Down With Our New Refreshers",
+  3: "Cool Down With Our New Refreshers",
 };
+
+/* Pumpkin Collection drink names, from the mobile frame (177:62). Positions are
+   percentages of the full photo, not of the frame: Figma crops 29px off the left
+   of the 434px-wide art (it is right-aligned in the 405px frame), so each frame x
+   is shifted by that crop before converting. */
+const PUMPKIN_LABELS = [
+  { lines: ["Pumpkin Brulee", "White Coffee"], pos: [14.33, 25.32] },
+  { lines: ["Roasted Rice", "Pumpkin Chai"],  pos: [53.48, 36.38] },
+  { lines: ["Pumpkin Butter", "Pure Matcha"], pos: [37.13, 60.28] },
+  { lines: ["Pumpkin", "Brûlée Matcha"],      pos: [76.51, 71.21] },
+] as const;
+
+/* Layer matching the object-cover box of the right-aligned pumpkin photo. */
+function PumpkinLabels() {
+  return (
+    <div
+      className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none"
+      style={{
+        width: "max(100%, calc(min(75vh, 864px) * 1536 / 2752))",
+        aspectRatio: "1536 / 2752",
+      }}
+    >
+      {PUMPKIN_LABELS.map((label) => (
+        <div
+          key={label.lines[0]}
+          className="absolute font-sans text-white whitespace-nowrap font-semibold"
+          style={{
+            left: `${label.pos[0]}%`,
+            top: `${label.pos[1]}%`,
+            fontSize: "calc(max(100vw, calc(min(75vh, 864px) * 1536 / 2752)) * 0.02298)",
+            lineHeight: 1.1,
+            textShadow: "0 1px 2px rgba(0,0,0,0.95), 0 0 6px rgba(0,0,0,0.7)",
+          }}
+        >
+          {label.lines[0]}
+          <br />
+          {label.lines[1]}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 /* Salted Maple Sesame drink names. Figma only places these on the mobile frame
    (177:62); the desktop coordinates are those same positions mapped through the
@@ -77,6 +120,7 @@ function MapleLabels({ view }: { view: "mobile" | "desktop" }) {
 interface Props {
   assets: {
     heroLeft: string;
+    heroPumpkinMobile: string;
     heroMapleDesktop: string;
     heroMapleMobile: string;
     heroCenter: string;
@@ -111,6 +155,12 @@ export default function HeroSection({ assets }: Props) {
             onSlideChange={setMobileSlide}
             initialIndex={0}
             images={[
+              {
+                src: assets.heroPumpkinMobile,
+                alt: "Pumpkin Collection",
+                objectPosition: "right",
+                slideOverlay: <PumpkinLabels />,
+              },
               {
                 src: assets.heroMapleMobile,
                 alt: "Salted Maple Sesame series",
