@@ -174,8 +174,8 @@ export default function Home() {
             </h2>
             <p className="text-[#5c5647] leading-relaxed max-w-xl mx-auto lg:mx-0 text-[15px] md:text-lg">
               Weddings, corporate events, birthdays and private gatherings —
-              unlimited handcrafted drinks and mini croffles, served from our
-              mobile GIOT cart.
+              handcrafted drinks and mini croffles, served from our mobile
+              GIOT cart.
             </p>
           </div>
 
