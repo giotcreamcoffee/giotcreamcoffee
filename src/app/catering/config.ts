@@ -144,12 +144,12 @@ export function drinkOptions(menu: (typeof DRINK_MENUS)[number]): FlavorOption[]
 }
 
 export const CROFFLES = [
-  { name: "Blueberry & Cream", image: "/images/menu/croffles/blueberry-cream.jpg" },
+  { name: "Sesame Coconut", image: "/images/menu/croffles/sesame-coconut.jpg" },
   { name: "Ube Coconut", image: "/images/menu/croffles/ube-coconut.jpg" },
   { name: "Biscoff & Cream", image: "/images/menu/croffles/biscoff-cream.jpg" },
   { name: "Strawberry Cheesecake", image: "/images/menu/croffles/strawberry-cheesecake.jpg" },
   { name: "Strawberry Pistachio", image: "/images/menu/croffles/strawberry-pistachio.jpg" },
-  { name: "Tiramisu", image: "/images/menu/croffles/tiramisu.jpg" },
+  { name: "Apple Crisp", image: "/images/menu/croffles/apple-crisp.jpg" },
   { name: "Seasonal Flavor", image: null, note: "Subject to availability" },
 ] as const;
 

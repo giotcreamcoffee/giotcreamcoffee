@@ -7,19 +7,19 @@ export const metadata: Metadata = {
 const ASSETS = {
   logo:                "/images/home/logo.png",
   brandStrip:          "/images/menu/brand-strip.jpg",
-  tiramisu:            "/images/menu/croffles/tiramisu.jpg",
+  appleCrisp:          "/images/menu/croffles/apple-crisp.jpg",
   biscoffCream:        "/images/menu/croffles/biscoff-cream.jpg",
   strawberryPistachio: "/images/menu/croffles/strawberry-pistachio.jpg",
   ubeCoconut:          "/images/menu/croffles/ube-coconut.jpg",
-  blueberryCream:      "/images/menu/croffles/blueberry-cream.jpg",
+  sesameCoconut:       "/images/menu/croffles/sesame-coconut.jpg",
   chicken:             "/images/menu/croffles/chicken.jpg",
   strawberryCheesecake:"/images/menu/croffles/strawberry-cheesecake.jpg",
 };
 
 const FEATURED = {
-  name: "Blueberry & Cream",
-  description: "Mascarpone, lemonade cream, fresh blueberry, blueberry syrup, garnish with fresh blueberry.",
-  image: ASSETS.blueberryCream,
+  name: "Sesame Coconut",
+  description: "Roasted black sesame, mascarpone, coconut cream, coconut flakes.",
+  image: ASSETS.sesameCoconut,
 };
 
 type Croffle = {
@@ -51,9 +51,10 @@ const CROFFLES: Croffle[] = [
     image: ASSETS.strawberryPistachio,
   },
   {
-    name: "Tiramisu",
-    description: "Croffle, tiramisu cream espresso, & cocoa powder.",
-    image: ASSETS.tiramisu,
+    name: "Apple Crisp",
+    description: "Brown butter cinnamon apple, cinnamon cookie crumbs, cream cheese.",
+    image: ASSETS.appleCrisp,
+    badge: "Seasonal",
   },
   {
     name: "Chili Maple Chicken",
